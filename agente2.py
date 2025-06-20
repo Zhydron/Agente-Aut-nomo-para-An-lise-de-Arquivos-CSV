@@ -10,7 +10,7 @@ from dotenv import load_dotenv
 # Carrega as variáveis do arquivo .env
 load_dotenv()
 
-# Agora você pode acessar as variáveis de ambiente
+# acessar as variáveis de ambiente
 api_key = os.getenv("GOOGLE_API_KEY")
 app_debug = os.getenv("APP_DEBUG")
 
