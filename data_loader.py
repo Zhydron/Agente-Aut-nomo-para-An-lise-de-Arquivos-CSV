@@ -10,7 +10,7 @@ def load_header(path):
         return df_head
     except FileNotFoundError:
         print(f"Erro: Arquivo de cabeçalho não encontrado em {path}")
-        return None # Ou raise uma exceção, dependendo do seu tratamento de erro desejado
+        return None 
     except Exception as e:
         print(f"Erro ao carregar cabeçalho: {e}")
         return None
@@ -41,7 +41,7 @@ def merge_data(df1, df2):
             df1,
             df2,
             on="CHAVE DE ACESSO",
-            how="left" # Pode testar com 'inner' também se 'left' continuar dando problema
+            how="left"
         )
 
         print(f"Merge realizado com sucesso! DataFrame resultante tem {len(merged_df)} registros.")
